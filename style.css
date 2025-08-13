@@ -1,1 +1,10 @@
-/* Add styles here */
+@import url(./css/global.css);
+@import url(./css/header.css);
+
+
+body {
+    height: 100svh;
+    background-image: url("./imagens/FundoPaginaInicial.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

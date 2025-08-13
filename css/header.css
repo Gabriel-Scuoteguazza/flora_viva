@@ -1,0 +1,37 @@
+header {
+    background-color: var(--verde-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5rem;
+    height: 6rem;
+}
+
+.viva-brasil a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+nav {
+    display: flex;
+    gap: 4.375rem;
+
+}
+
+header a {
+    color: var(--amarelo-1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+header ul {
+    display: flex;
+    gap: 7rem;
+}
+
+header ul,
+header li {
+    list-style: none;
+}
