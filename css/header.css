@@ -1,37 +1,48 @@
 header {
-    background-color: var(--verde-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 5rem;
+    padding-inline: 30px;
     height: 6rem;
+    width: 95%;
 }
 
-.viva-brasil a {
+.flora_viva a {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
 nav {
     display: flex;
-    gap: 4.375rem;
-
+    gap: 15px;
 }
 
-header a {
-    color: var(--amarelo-1);
+nav a {
+    color: #909090;
+    opacity: 80%;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 20px;
+    font-family: 'Inter';
+    text-transform: uppercase;
 }
 
-header ul {
-    display: flex;
-    gap: 7rem;
-}
 
 header ul,
 header li {
     list-style: none;
+}
+
+
+.flora_viva img {
+    height: 35px;
+}
+
+a:hover {
+    color: #FFFFFF;
+    opacity: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    
 }

@@ -1,0 +1,123 @@
+@import "../css/global.css";
+@import "../css/reset.css";
+@import url(../css/header.css);
+
+body {
+    background-color: #000;
+
+}
+
+.coverCard {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+
+    background-size: cover;
+    background-image: url(../imagens/FundoColônia.png);
+    background-position: 1%;
+
+    .coverCard__title {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .coverCard__title {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+
+        .coverCard__title_transparent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-image: url(../imagens/FundoColônia.png);
+            background-position: 1%;
+            justify-content: left;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: -130px;
+            margin-left: 100px;
+
+            strong {
+                font-size: 15px;
+                
+            }
+
+        }
+    }
+
+
+    .coverCard__content {
+        position: relative;
+        z-index: 2;
+        width: 50vw;
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .coverCard__subTitle {
+        text-transform: uppercase;
+        margin-left: 100px;
+        color: #909090;
+        line-height: 20px;
+        font-weight: 800;
+
+    }
+}
+
+.hea {
+    position: absolute;
+    z-index: 5;
+}
+
+.textos {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 50%;
+    margin-left: 1200px;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.textos strong {
+    font-weight: bold;
+    opacity: 100%;
+
+}
+
+.Nas {
+    margin-bottom: 20px;
+}
+
+
+
+
+/*
+.logo img {
+    width: 5%;
+} 
+*/

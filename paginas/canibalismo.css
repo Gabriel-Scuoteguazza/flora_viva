@@ -1,0 +1,121 @@
+@import "../css/global.css";
+@import "../css/reset.css";
+@import url(../css/header.css);
+
+body {
+    background-color: #000;
+}
+
+.coverCard {
+    font-family: 'Inter', sans-serif;
+
+    background-size: cover;
+    background-image: url(../imagens/Canibalismo3.jpg);
+    background-position: 1%;
+
+    .coverCard__title {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 70px;
+        line-height: 1;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+
+    .coverCard__title {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+
+        .coverCard__title_transparent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            align-items: flex-start;
+            background-image: url(../imagens/Canibalismo3.jpg);
+            background-position: 1%;
+            justify-content: center;
+            text-align: left;
+            flex-direction: column;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-left: 80px;
+            
+            strong {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    .coverCard__content {
+        position: relative;
+        z-index: 2;
+        width: 50vw;
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .coverCard__subTitle {
+        text-transform: uppercase;
+        margin-left: 100px;
+        color: #909090;
+        line-height: 20px;
+        font-weight: 800;
+
+    }
+}
+
+.hea {
+    position: absolute;
+    z-index: 5;
+}
+
+.destaque a {
+    color: #FFFFFF;
+    opacity: 100%;
+}
+
+.textos {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 50%;
+    margin-left: 12px;
+    width: 500px;
+    margin-top: -450px;
+    margin-left: 50px;
+}
+
+.textos strong {
+    font-weight: bold;
+    opacity: 100%;
+
+}
+
+
+/*
+.logo img {
+    width: 5%;
+} 
+*/
