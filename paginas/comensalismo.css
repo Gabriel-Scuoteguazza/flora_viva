@@ -97,14 +97,13 @@ body {
     opacity: 100%;
 }
 
-.textos {
-    font-size: 15px;
+.textos p {
+    font-size: 22px;
     line-height: 1.5;
     opacity: 50%;
     margin-left: 12px;
     width: 500px;
     margin-top: -400px;
-    margin-left: 50px;
 }
 
 .textos strong {

@@ -4,7 +4,7 @@
 
 body {
     background-color: #000;
-
+    overflow: hidden;
 }
 
 .coverCard {
@@ -113,23 +113,6 @@ body {
     line-height: 150%;
 }
 
-li span {
-    font-weight: bold;
-}
-
-.coverCard__text li {
-    color: #fff;
-}
-
-.coverCard__text ol,
-ul {
-    list-style-type: disc;
-}
-
-.destaque a {
-    color: #FFFFFF;
-    opacity: 100%;
-}
 
 .textos {
     margin-left: 1100px;
@@ -153,8 +136,19 @@ ul {
     margin-bottom: 20px;
 }
 
-/*
-.logo img {
-    width: 5%;
-} 
-*/
+.botoes {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 62px;
+    align-items: center;
+    z-index: 5;
+    margin-bottom: 5px; 
+}
+
+.botoes img {
+    width: 60px;
+    height: auto;
+}

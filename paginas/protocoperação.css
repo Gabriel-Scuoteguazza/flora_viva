@@ -4,24 +4,25 @@
 
 body {
     background-color: #000;
+
 }
 
 .coverCard {
     font-family: 'Inter', sans-serif;
 
     background-size: cover;
-    background-image: url(../imagens/Canibalismo3.jpg);
+    background-image: url(../imagens/Fundo\ Protocooperação.png);
     background-position: 1%;
 
     .coverCard__title {
         position: absolute;
         z-index: 1;
         top: 0;
-        left: 0;
+        right: 0;
         width: 50vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 70px;
+        font-size: 50px;
         line-height: 1;
         font-weight: bold;
         text-align: center;
@@ -38,24 +39,26 @@ body {
             top: 0;
             left: 0;
             width: 100vw;
-            height: 60vh;
+            height: 93vh;
             display: flex;
             align-items: flex-start;
-            background-image: url(../imagens/Canibalismo3.jpg);
+            background-image: url(../imagens/Fundo\ Protocooperação.png);
             background-position: 1%;
             justify-content: center;
-            text-align: left;
             flex-direction: column;
             background-size: cover;
-            
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-left: 100px;
-            
+            margin-left: 60px;
+            margin-top: -150px;
+
+        
             strong {
-                font-size: 15px;
+                font-size: 25px;
+                margin-bottom: -40px;
             }
+            
         }
     }
 
@@ -93,19 +96,51 @@ body {
     z-index: 5;
 }
 
+.coverCard__text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+.coverCard__text {
+    line-height: 150%;
+}
+
+li span {
+    font-weight: bold;
+}
+
+.coverCard__text li {
+    color: #fff;
+}
+
+.coverCard__text ol,
+ul {
+    list-style-type: disc;
+}
+
 .destaque a {
     color: #FFFFFF;
     opacity: 100%;
 }
 
 .textos {
-    font-size: 15px;
+    margin-left: 960px;
+    margin-bottom: 220px;
+    width: 600px;
+}
+
+.textos p {
+    font-size: 20px;
     line-height: 1.5;
     opacity: 50%;
-    margin-left: 12px;
-    width: 500px;
-    margin-top: -450px;
-    margin-left: 50px;
 }
 
 .textos strong {
@@ -114,6 +149,9 @@ body {
 
 }
 
+.coverCard__text {
+    margin-bottom: 20px;
+}
 
 /*
 .logo img {
