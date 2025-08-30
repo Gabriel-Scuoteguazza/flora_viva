@@ -1,0 +1,93 @@
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
+
+body {
+    background-color: #000;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../../imagens/FundoPáginaInicial.png);
+}
+
+.coverCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .coverCard__title {
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 300px;
+
+
+    }
+}
+
+.hea,
+.teste {
+    position: absolute;
+    z-index: 5;
+}
+
+#mensagem {
+    display: none;
+}
+
+#botao-reiniciar {
+    display: none;
+}
+
+.teste {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -90px;
+}
+
+#exibicao-palavra {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.imagemCaiMacaco {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: -300px;
+}
+
+#entrada-letra {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+button {
+    border: 10px solid #495826;
+    background-color: #495826;
+    border-radius: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
