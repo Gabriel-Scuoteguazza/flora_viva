@@ -1,17 +1,17 @@
-@import "../css/global.css";
-@import "../css/reset.css";
-@import url(../css/header.css);
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
 
 body {
     background-color: #000;
-
+    overflow: hidden;
 }
 
 .coverCard {
     font-family: 'Inter', sans-serif;
 
     background-size: cover;
-    background-image: url(../imagens/Fundo\ Inquilinismo.png);
+    background-image: url(../../imagens/FundoSociedade.png);
     background-position: 1%;
 
     .coverCard__title {
@@ -22,12 +22,11 @@ body {
         width: 50vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 50px;
+        font-size: 75px;
         line-height: 1;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        
     }
 
     .coverCard__title {
@@ -39,29 +38,26 @@ body {
             top: 0;
             left: 0;
             width: 100vw;
-            height: 100vh;
+            height: 75vh;
             display: flex;
             align-items: flex-start;
-            background-image: url(../imagens/Fundo\ Inquilinismo.png);
-            background-position: 1%;
+            background-image: url(../../imagens/FundoSociedade.png);
             justify-content: center;
+            text-align: left;
             flex-direction: column;
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-left: 190px;
-            margin-top: -150px;
+            margin-left: 150px;
 
-            
             strong {
                 font-size: 25px;
-                margin-bottom: -40px;
+                margin-bottom: -65px;
             }
-            
+
         }
     }
-
 
     .coverCard__content {
         position: relative;
@@ -96,65 +92,37 @@ body {
     z-index: 5;
 }
 
-.coverCard__text {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.botoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-
-
-.coverCard__text {
-    line-height: 150%;
-}
-
-li span {
-    font-weight: bold;
-}
-
-.coverCard__text li {
-    color: #fff;
-}
-
-.coverCard__text ol,
-ul {
-    list-style-type: disc;
-}
-
-.destaque a {
-    color: #FFFFFF;
-    opacity: 100%;
-}
-
 .textos {
-    margin-left: 1100px;
-    margin-bottom: 220px;
-    width: 600px;
-}
-
-.textos p {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 30px;
     opacity: 50%;
+    width: 600px;
+    margin-top: -550px;
+    margin-left: 1110px;
 }
 
 .textos strong {
     font-weight: bold;
     opacity: 100%;
-
 }
 
 .coverCard__text {
     margin-bottom: 20px;
 }
 
-/*
-.logo img {
-    width: 5%;
-} 
-*/
+.botoes {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+    align-items: center;
+    z-index: 5;
+    margin-bottom: 15px;
+}
+
+.botoes img {
+    width: 60px;
+    height: auto;
+}

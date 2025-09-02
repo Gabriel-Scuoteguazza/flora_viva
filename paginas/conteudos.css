@@ -1,12 +1,17 @@
-@import "../css/global.css";
-@import "../css/reset.css";
-@import url(../css/header.css);
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
+
+body {
+    background-color: #000;
+    overflow: hidden;
+}
 
 .coverCard {
     font-family: 'Inter', sans-serif;
 
     background-size: cover;
-    background-image: url(../imagens/FundoConteúdos.png);
+    background-image: url(../imagens/FundoConteudos.png);
     background-position: 1%;
 
     .coverCard__title {
@@ -17,35 +22,32 @@
         width: 50vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 70px;
+        font-size: 120px;
         line-height: 1;
         font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
+        text-transform: uppercase;   
     }
 
     .coverCard__title {
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(11px);
+        backdrop-filter: blur(12px);
 
         .coverCard__title_transparent {
             position: absolute;
             top: 0;
             left: 0;
             width: 100vw;
-            height: 100vh;
+            height: 75vh;
             display: flex;
-            align-items: center;
-            background-image: url(../imagens/FundoConteúdos.png);
-            background-position: 1%;
-            justify-content: left;
+            align-items: flex-start;
+            background-image: url(../imagens/FundoConteudos.png);
+            justify-content: center;
+            flex-direction: column;
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            padding-inline-start: 40px;
-            padding-bottom: 600px;
-            font-size: 100px;
+            margin-left: 115px;
         }
     }
 
@@ -87,7 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 200px;
+    width: 100%;
 }
 
 
@@ -126,10 +129,10 @@ ul {
 }
 
 .textos {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 30px;
     opacity: 50%;
-
-    width: 600px;
-    margin-inline: auto;
+    width: 700px;
+    margin-top: -550px;
+    margin-left: 80px;
 }

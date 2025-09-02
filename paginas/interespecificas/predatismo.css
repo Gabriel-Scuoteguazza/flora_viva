@@ -1,34 +1,32 @@
-@import "../css/global.css";
-@import "../css/reset.css";
-@import url(../css/header.css);
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
 
 body {
     background-color: #000;
-
+    overflow: hidden;
 }
 
 .coverCard {
     font-family: 'Inter', sans-serif;
-    display: flex;
 
     background-size: cover;
-    background-image: url(../imagens/FundoMutualismo.png);
+    background-image: url(../../imagens/FundoPredatismo.png);
     background-position: 1%;
 
     .coverCard__title {
         position: absolute;
         z-index: 1;
-        top: 50%;
-        left: 0;
-        width: 100vw;
-        height: 50vh;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
         overflow: hidden;
-        font-size: 30px;
+        font-size: 75px;
         line-height: 1;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-
     }
 
     .coverCard__title {
@@ -40,27 +38,25 @@ body {
             top: 0;
             left: 0;
             width: 100vw;
-            height: 100vh;
+            height: 75vh;
             display: flex;
-            align-items: center;
-            background-image: url(../imagens/FundoMutualismo.png);
-            background-position: 1%;
-            justify-content: left;
+            align-items: flex-start;
+            background-image: url(../../imagens/FundoPredatismo.png);
+            justify-content: center;
+            text-align: left;
+            flex-direction: column;
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-top: -130px;
-            margin-left: 100px;
-
+            margin-left: 150px;
+            
             strong {
-                font-size: 15px;
-                
-            }
-
+                font-size: 25px;
+                margin-bottom: -65px;
+            }   
         }
     }
-
 
     .coverCard__content {
         position: relative;
@@ -75,6 +71,7 @@ body {
         position: relative;
         z-index: 2;
         display: flex;
+        flex-direction: column;
         align-items: start;
         gap: 50px;
     }
@@ -85,7 +82,6 @@ body {
         color: #909090;
         line-height: 20px;
         font-weight: 800;
-
     }
 }
 
@@ -94,76 +90,37 @@ body {
     z-index: 5;
 }
 
-.coverCard__text {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.botoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-
-
-.botoes a {
-    border: 10px solid #495826;
-    background-color: #495826;
-    border-radius: 15px;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Inter';
-    text-transform: uppercase;
-}
-
-.coverCard__text {
-    line-height: 150%;
-}
-
-li span {
-    font-weight: bold;
-}
-
-.coverCard__text li {
-    color: #fff;
-}
-
-.coverCard__text ol,
-ul {
-    list-style-type: disc;
-}
-
-.destaque a {
-    color: #FFFFFF;
-    opacity: 100%;
-}
-
 .textos {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 30px;
     opacity: 50%;
-    margin-left: 900px;
-    width: 500px;
+    width: 600px;
+    margin-top: -550px;
+    margin-left: 1110px;
 }
 
 .textos strong {
     font-weight: bold;
     opacity: 100%;
-
 }
 
-.Nas {
+.coverCard__text {
     margin-bottom: 20px;
 }
 
+.botoes {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+    align-items: center;
+    z-index: 5;
+    margin-bottom: 15px; 
+}
 
-
-
-/*
-.logo img {
-    width: 5%;
-} 
-*/
+.botoes img {
+    width: 60px;
+    height: auto;
+}

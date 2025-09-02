@@ -1,6 +1,6 @@
-@import "../css/global.css";
-@import "../css/reset.css";
-@import url(../css/header.css);
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
 
 body {
     background-color: #000;
@@ -12,7 +12,7 @@ body {
     display: flex;
 
     background-size: cover;
-    background-image: url(../imagens/FundoColônia.png);
+    background-image: url(../../imagens/FundoColônia.png);
     background-position: 1%;
 
     .coverCard__title {
@@ -23,7 +23,7 @@ body {
         width: 100vw;
         height: 50vh;
         overflow: hidden;
-        font-size: 50px;
+        font-size: 75px;
         line-height: 1;
         font-weight: bold;
         text-align: center;
@@ -43,8 +43,7 @@ body {
             height: 100vh;
             display: flex;
             align-items: flex-start;
-            background-image: url(../imagens/FundoColônia.png);
-            background-position: 1%;
+            background-image: url(../../imagens/FundoColônia.png);
             justify-content: center;
             text-align: left;
             flex-direction: column;
@@ -54,11 +53,10 @@ body {
             color: transparent;
             margin-top: -300px;
             margin-left: 200px;
-
             
             strong {
                 font-size: 25px;
-                margin-bottom: -40px;
+                margin-bottom: -65px;
             }
 
         }
@@ -99,11 +97,8 @@ body {
 }
 
 .textos {
-    margin-left: 1000px;
+    margin-left: 1225px;
     margin-bottom: 150px;
-}
-
-.textos p {
     font-size: 20px;
     line-height: 1.5;
     opacity: 50%;
@@ -116,20 +111,16 @@ body {
 
 }
 
-.Nas {
-    margin-bottom: 20px;
-}
-
 .botoes {
     position: absolute;
     bottom: 0;
     width: 95%;
     display: flex;
     justify-content: space-between;
-    padding-inline: 62px;
+    padding-inline: 60px;
     align-items: center;
     z-index: 5;
-    margin-bottom: 5px; 
+    margin-bottom: 15px; 
 }
 
 .botoes img {
