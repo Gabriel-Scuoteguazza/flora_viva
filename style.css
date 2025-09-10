@@ -18,18 +18,18 @@
         width: 50vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 180px;
+        font-size: 11.25rem;
         line-height: 1;
         font-weight: bold;
         text-align: left;
         text-transform: uppercase;
-        letter-spacing: 10px;
+        letter-spacing: 0.625rem;
 
     }
 
     .coverCard__title {
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(11px);
+        backdrop-filter: blur(0.6875rem);
 
         .coverCard__title_transparent {
             position: absolute;
@@ -48,10 +48,10 @@
             color: transparent;
 
             .oi {
-                margin-left: -515px;
+                margin-left: -32.1875rem;
             }
             .oio {
-                margin-left: -55px;
+                margin-left: -3.4375rem;
             }
         }
     }
@@ -69,10 +69,10 @@
             justify-content: center;
             flex-direction: column;
             .oi {
-                margin-left: -500px;
+                margin-left: -31.25rem;
             }
             .oio {
-                margin-left: -55px;
+                margin-left: -3.4375rem;
             }
         }
     }
@@ -91,29 +91,29 @@
         z-index: 2;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 2rem;
         align-items: start;
     }
 
     .coverCard__subTitle {
         text-transform: uppercase;
-        margin-left: 100px;
+        margin-left: 6.25rem;
         color: #909090;
-        line-height: 20px;
+        line-height: 1.25rem;
         font-weight: 800;
-        line-height: 25px;
-        margin-bottom: 40px;
+        line-height: 1.5625rem;
+        margin-bottom: 2.5rem;
 
 
     }
 }
 
   .coverCard__subTitle1 {
-        margin-top: 170px;
+        margin-top: 10.625rem;
         position: absolute;
         z-index: 2;
         text-transform: uppercase;
-        margin-left: 150px;
+        margin-left: 9.375rem;
         color: #909090;
         font-weight: 800;
 

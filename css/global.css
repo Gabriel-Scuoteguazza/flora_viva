@@ -6,21 +6,21 @@ body {
 
 
 .container {
-	padding: 45px 63px;
+	padding: 2.8125rem 3.9375rem;
 }
 
 @media screen and (max-width: 1000px) {
   .container {
-    padding: 45px;
+    padding: 2.8125rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .container {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
   }
 
   .header a {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }

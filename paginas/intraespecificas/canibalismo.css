@@ -1,11 +1,7 @@
 @import "../../css/global.css";
 @import "../../css/reset.css";
 @import url(../../css/header.css);
-
-body {
-    background-color: #000;
-    overflow: hidden;
-}
+@import url(../../css/esquerda.css);
 
 .coverCard {
     font-family: 'Inter', sans-serif;
@@ -22,7 +18,7 @@ body {
         width: 50vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 75px;
+        font-size: 4.6875rem;
         line-height: 1;
         font-weight: bold;
         text-transform: uppercase;   
@@ -30,7 +26,7 @@ body {
 
     .coverCard__title {
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(0.75rem);
 
         .coverCard__title_transparent {
             position: absolute;
@@ -47,11 +43,11 @@ body {
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-left: 115px;
+            margin-left: 7.1875rem;
             
             strong {
-                font-size: 25px;
-                margin-bottom: -65px;
+                font-size: 1.5625rem;
+                margin-bottom: -4.0625rem;
             }
         }
     }
@@ -71,51 +67,16 @@ body {
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 50px;
+        gap: 3.125rem;
     }
 
     .coverCard__subTitle {
         text-transform: uppercase;
-        margin-left: 100px;
+        margin-left: 6.25rem;
         color: #909090;
-        line-height: 20px;
+        line-height: 1.25rem;
         font-weight: 800;
 
     }
 }
 
-.hea {
-    position: absolute;
-    z-index: 5;  
-}
-
-.textos {
-    font-size: 20px;
-    line-height: 30px;
-    opacity: 50%;
-    width: 600px;
-    margin-top: -550px;
-    margin-left: 60px;
-}
-
-.textos strong {
-    font-weight: bold;
-    opacity: 100%;
-}
-
-.botoes {
-    position: absolute;
-    bottom: 0;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 60px;
-    align-items: center;
-    z-index: 5;
-    margin-bottom: 15px; 
-}
-
-.botoes img {
-    width: 60px;
-    height: auto;
-}

@@ -23,7 +23,7 @@ body {
         width: 100vw;
         height: 50vh;
         overflow: hidden;
-        font-size: 75px;
+        font-size: 4.6875rem;
         line-height: 1;
         font-weight: bold;
         text-align: center;
@@ -32,7 +32,7 @@ body {
 
     .coverCard__title {
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(0.75rem);
 
         .coverCard__title_transparent {
             position: absolute;
@@ -50,12 +50,12 @@ body {
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-top: -300px;
-            margin-left: 200px;
+            margin-top: -18.75rem;
+            margin-left: 10.625rem;
             
             strong {
-                font-size: 25px;
-                margin-bottom: -65px;
+                font-size: 1.5625rem;
+                margin-bottom: -4.0625rem;
             }
         }
     }
@@ -74,14 +74,14 @@ body {
         z-index: 2;
         display: flex;
         align-items: start;
-        gap: 50px;
+        gap: 3.125rem;
     }
 
     .coverCard__subTitle {
         text-transform: uppercase;
-        margin-left: 100px;
+        margin-left: 6.25rem;
         color: #909090;
-        line-height: 20px;
+        line-height: 1.25rem;
         font-weight: 800;
     }
 }
@@ -92,12 +92,12 @@ body {
 }
 
 .textos {
-    margin-left: 1225px;
-    margin-bottom: 150px;
-    font-size: 20px;
+    margin-left: 64.0625rem;
+    margin-bottom: 8.125rem;
+    font-size: 1.25rem;
     line-height: 1.5;
     opacity: 50%;
-    width: 600px;
+    width: 700px;
 }
 
 .textos strong {
@@ -111,14 +111,14 @@ body {
     width: 95%;
     display: flex;
     justify-content: space-between;
-    padding-inline: 60px;
+    padding-inline: 3.75rem;
     align-items: center;
     z-index: 5;
-    margin-bottom: 15px; 
+    margin-bottom: 0.9375rem; 
 }
 
 .botoes img {
-    width: 60px;
+    width: 3.75rem;
     height: auto;
 }
  

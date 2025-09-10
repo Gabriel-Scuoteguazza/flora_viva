@@ -22,7 +22,7 @@ body {
         width: 50vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 120px;
+        font-size: 7.5rem;
         line-height: 1;
         font-weight: bold;
         text-transform: uppercase;   
@@ -30,7 +30,7 @@ body {
 
     .coverCard__title {
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(0.75rem);
 
         .coverCard__title_transparent {
             position: absolute;
@@ -41,13 +41,14 @@ body {
             display: flex;
             align-items: flex-start;
             background-image: url(../imagens/FundoConteudos.png);
+            background-position: 0.625rem;
             justify-content: center;
             flex-direction: column;
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-left: 115px;
+            margin-left: 7.1875rem;
         }
     }
 
@@ -67,14 +68,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 50px;
+        gap: 3.125rem;
     }
 
     .coverCard__subTitle {
         text-transform: uppercase;
-        margin-left: 100px;
+        margin-left: 6.25rem;
         color: #909090;
-        line-height: 20px;
+        line-height: 1.25rem;
         font-weight: 800;
 
     }
@@ -89,19 +90,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 12.5rem;
     width: 100%;
 }
 
 
 .botoes a {
-    border: 10px solid #495826;
+    border: 0.625rem solid #495826;
     background-color: #495826;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Inter';
     text-transform: uppercase;
 }
@@ -129,10 +130,10 @@ ul {
 }
 
 .textos {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
     opacity: 50%;
-    width: 700px;
-    margin-top: -550px;
-    margin-left: 80px;
+    width: 43.75rem;
+    margin-top: -28.125rem;
+    margin-left: 5rem;
 }

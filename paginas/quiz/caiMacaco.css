@@ -11,7 +11,7 @@ body {
 
 .coverCard {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(0.75rem);
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -26,11 +26,11 @@ body {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.5;
         font-weight: bold;
         text-transform: uppercase;
-        padding-top: 300px;
+        
 
 
     }
@@ -53,13 +53,13 @@ body {
 .teste {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: -90px;
+    gap: 0.9375rem;
+    margin-top: -5.625rem;
 }
 
 #exibicao-palavra {
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-size: 1.5625rem;
+    margin-bottom: 0.3125rem;
 }
 
 .imagemCaiMacaco {
@@ -68,7 +68,7 @@ body {
     justify-content: left;
     width: 100%;
     flex-direction: row;
-    margin-bottom: -300px;
+    padding-top: 150px;
 }
 
 #entrada-letra {
@@ -76,18 +76,18 @@ body {
     color: #fff;
     border: none;
     text-align: center;
-    border-radius: 5px;
-    font-size: 15px;
+    border-radius: 0.3125rem;
+    font-size: 0.9375rem;
     font-weight: 700;
 }
 
 button {
-    border: 10px solid #495826;
+    border: 0.625rem solid #495826;
     background-color: #495826;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
 }

@@ -1,44 +1,68 @@
-const listaPalavras = ['javascript', 'html', 'css', 'youtube'];
+// Lista de perguntas com suas respectivas respostas
+// Lista de perguntas com respostas sobre relações ecológicas
+const perguntasRespostas = [
+    {
+        pergunta: "Como é chamada a relação em que um organismo se beneficia e o outro é prejudicado?",
+        resposta: "parasitismo"
+    },
+    {
+        pergunta: "Qual é a relação em que ambos os organismos se beneficiam?",
+        resposta: "mutualismo"
+    },
+    {
+        pergunta: "Como se chama a relação em que um organismo se alimenta do outro causando sua morte?",
+        resposta: "predacao"
+    },
+    {
+        pergunta: "Qual é a relação em que um organismo se beneficia enquanto o outro não é prejudicado nem beneficiado?",
+        resposta: "comensalismo"
+    },
+    {
+        pergunta: "Como é chamada a relação em que espécies diferentes competem por recursos limitados?",
+        resposta: "competicao"
+    },
+    {
+        pergunta: "Qual é a relação em que uma planta libera substâncias químicas que inibem o crescimento de outras?",
+        resposta: "amensalismo"
+    }
+];
 
-let palavraEscolhida;
+let perguntaEscolhida;
+let respostaEscolhida;
 let exibicaoPalavra;
 let letrasChutadas;
 let tentativasRestantes;
 let numerosErros;
 
-
 function iniciarJogo() {
-    //Escolher uma palavra aleatória da lista
-    palavraEscolhida = listaPalavras[Math.floor(Math.random() * listaPalavras.length)]; //sorteio de palavras
+    // Sorteia uma pergunta e resposta correspondente
+    const sorteio = perguntasRespostas[Math.floor(Math.random() * perguntasRespostas.length)];
+    perguntaEscolhida = sorteio.pergunta;
+    respostaEscolhida = sorteio.resposta;
 
+    // Exibe a pergunta no h1
+    document.querySelector(".coverCard__title").innerText = perguntaEscolhida;
 
-    //Iniciar a exibição de underscores "__"    display: none;
-    exibicaoPalavra = Array(palavraEscolhida.length).fill('_');
+    // Exibe underscores no lugar das letras
+    exibicaoPalavra = Array(respostaEscolhida.length).fill('_');
 
-
-    //Iniciar a lista de palavras chuatadas
     letrasChutadas = [];
-
-    //Definir o número máximo de tentativas
-    tentativasRestantes = 7; //TROCAR DEPOIS
-
-    //Iniciar o número de erros
+    tentativasRestantes = 7;
     numerosErros = 0;
 
     atualizarExibição();
-
 }
+
 function atualizarExibição() {
     document.getElementById("exibicao-palavra").innerText = exibicaoPalavra.join(' ');
     document.getElementById("letras-chutadas").innerText = `${letrasChutadas.join(', ')}`;
 
     document.getElementById("imagem").src = `./img/Macaco${numerosErros}.png`;
 
-    //Verificar se o jogo terminou
     if (tentativasRestantes === 0) {
-        encerrarJogo('VOCÊ MORREU!');
+        encerrarJogo('VOCÊ PERDEU!');
     } else if (!exibicaoPalavra.includes('_')) {
-        encerrarJogo('PARABÉNS! VOCÊ VENCEU');
+        encerrarJogo('PARABÉNS! VOCÊ VENCEU!');
     }
 }
 
@@ -58,9 +82,9 @@ function chutarLetra() {
 
     letrasChutadas.push(letra);
 
-    if (palavraEscolhida.includes(letra)) {
-        for (let i = 0; i < palavraEscolhida.length; i++) {
-            if (palavraEscolhida[i] === letra) {
+    if (respostaEscolhida.includes(letra)) {
+        for (let i = 0; i < respostaEscolhida.length; i++) {
+            if (respostaEscolhida[i] === letra) {
                 exibicaoPalavra[i] = letra;
             }
         }
@@ -68,14 +92,11 @@ function chutarLetra() {
         tentativasRestantes--;
         numerosErros++;
 
-        document.getElementById('som-erro').play();
-
         const somErro = document.getElementById('som-erro');
-        somErro.volume = 0.3;     // deixa o volume mais baixo
-        somErro.currentTime = 0;  // reinicia o áudio
+        somErro.volume = 0.3;
+        somErro.currentTime = 0;
         somErro.play();
 
-        // cortar duração (igual à troca da imagem, ex: 1s)
         setTimeout(() => {
             somErro.pause();
             somErro.currentTime = 0;
@@ -83,22 +104,14 @@ function chutarLetra() {
     }
 
     entradaLetra.value = '';
-
     atualizarExibição();
 }
 
 function encerrarJogo(mensagem) {
-    //Desabilitar o campo de digitação
     document.getElementById('entrada-letra').disabled = true;
-
-    //Exibe a mensagem
     document.getElementById('mensagem').innerText = mensagem;
-
-    //Exibe botão
+    document.getElementById('mensagem').style.display = "block";
     document.getElementById('botao-reiniciar').style.display = 'block';
 }
 
-
-
-window.load = iniciarJogo();
-
+window.onload = iniciarJogo;
