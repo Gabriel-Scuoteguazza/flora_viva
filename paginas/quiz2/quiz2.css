@@ -22,9 +22,10 @@ body {
     height: 100%;
 }
 
-.hea {
+.hea  {
     position: absolute;
     z-index: 5;
+  
 }
 
 .game-board {

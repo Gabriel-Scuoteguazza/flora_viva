@@ -26,6 +26,8 @@ body {
 .hea {
     position: absolute;
     z-index: 5;
+    margin-top: -980px;
+    margin-left: -20px;
 }
 
 .app {

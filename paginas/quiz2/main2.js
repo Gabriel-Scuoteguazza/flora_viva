@@ -49,13 +49,13 @@ const loop = setInterval(() => {
   if (score >= 1000 && score < 2000) {
     gameBoard.style.backgroundImage = "url('./arquivos/back3.png')";
     pipe.src = "./arquivos/pipe3.png";
-  } else if (score >= 3000 && score < 4000) {
+  } else if (score >= 2000 && score < 3000) {
     gameBoard.style.backgroundImage = "url('./arquivos/back4.png')";
     pipe.src = "./arquivos/pipe4.png";
-  } else if (score >= 5000 && score < 6000) {
+  } else if (score >= 3000 && score < 4000) {
     gameBoard.style.backgroundImage = "url('./arquivos/back5.png')";
     pipe.src = "./arquivos/pipe5.png";
-  } else if (score >= 5000 && score < 6000) {
+  } else if (score >= 4000 && score < 5000) {
     gameBoard.style.backgroundImage = "url('./arquivos/back6.png')";
     pipe.src = "./arquivos/pipe6.png";
   }
@@ -72,11 +72,11 @@ function showGameOverMessage() {
     message = "COMPETIÇÃO INTRAESPECÍFICA - O lobo perdeu seu território para o lobo inimigo.";
   } else if (score >= 1000 && score < 2000) {
     message = "PREDATISMO - O lobo predou o coelho!";
-  } else if (score >= 3000 && score < 4000) {
+  } else if (score >= 2000 && score < 3000) {
     message = "COMPETIÇÃO - O lobo encontrou outro desafio.";
-  } else if (score >= 5000 && score < 6000) {
+  } else if (score >= 3000 && score < 4000) {
     message = "INQUILINISMO – O lobo encontrou um abrigo, a árvore!";
-  } else if (score >= 7000 && score < 8000) {
+  } else if (score >= 4000 && score < 5000) {
     message = "COMPETIÇÃO INTERESPECÍFICA - O lobo perdeu sua caça para um urso.";
   }
 
@@ -92,3 +92,21 @@ function showGameOverMessage() {
 function restartGame() {
   location.reload();
 }
+
+// ✅ Só registra os eventos quando o DOM terminar de carregar
+window.addEventListener("DOMContentLoaded", () => {
+  const restartBtn = document.getElementById("restartBtn");
+  const backBtn = document.getElementById("backBtn");
+
+  if (restartBtn) {
+    restartBtn.addEventListener("click", () => {
+      location.reload(); // recarrega a página
+    });
+  }
+
+  if (backBtn) {
+    backBtn.addEventListener("click", () => {
+      window.location.href = "../jogos.html"; // volta para a página de jogos
+    });
+  }
+});

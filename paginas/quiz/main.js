@@ -1,4 +1,3 @@
-// Lista de perguntas com suas respectivas respostas
 // Lista de perguntas com respostas sobre relações ecológicas
 const perguntasRespostas = [
     {
@@ -50,6 +49,11 @@ function iniciarJogo() {
     tentativasRestantes = 7;
     numerosErros = 0;
 
+    // Limpa mensagens antigas
+    document.getElementById('mensagem').style.display = "none";
+    document.getElementById('botao-reiniciar').style.display = "none";
+    document.getElementById('entrada-letra').disabled = false;
+
     atualizarExibição();
 }
 
@@ -72,11 +76,13 @@ function chutarLetra() {
 
     if (!letra.match(/[a-zà-ùç]/i)) {
         alert('Por favor, insira uma letra válida');
+        entradaLetra.value = '';
         return;
     }
 
     if (letrasChutadas.includes(letra)) {
         alert('Você já tentou essa letra');
+        entradaLetra.value = '';
         return;
     }
 
@@ -114,4 +120,12 @@ function encerrarJogo(mensagem) {
     document.getElementById('botao-reiniciar').style.display = 'block';
 }
 
-window.onload = iniciarJogo;
+// Inicializa o jogo e configura o botão de reiniciar
+window.onload = () => {
+    iniciarJogo();
+
+    const botaoReiniciar = document.getElementById('botao-reiniciar');
+    botaoReiniciar.addEventListener("click", () => {
+        iniciarJogo();
+    });
+};

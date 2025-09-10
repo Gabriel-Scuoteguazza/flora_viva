@@ -47,7 +47,7 @@ body {
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-left: 115px;
+            margin-left: 100px;
         }
     }
 
@@ -59,6 +59,7 @@ body {
         display: flex;
         height: 100vh;
         justify-content: center;
+        align-items: flex-end;
     }
 
     .container {
@@ -69,7 +70,8 @@ body {
         align-items: center;
         justify-content: center;
         gap: 30px;
-        width: 50%;
+        width: 85%;
+        margin-bottom: 100px;
     }
 
     .coverCard__subTitle {
